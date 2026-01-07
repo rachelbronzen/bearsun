@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#556b2f"        # Hijau gelap (Warna aksen/tombol)
+backgroundColor = "#facdd5"     # Misty Rose (Pink Pastel Background)
+secondaryBackgroundColor = "#fff0f5" # Lavender Blush (sidebar/input box)
+textColor = "#2f4f4f"           # Dark Slate Gray (Warna teks biar kontras & enak dibaca)
+font = "monospace"                # Font coding/terminal
