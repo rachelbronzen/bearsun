@@ -33,42 +33,48 @@ st.markdown("""
     
     /* --- LOGIKA TOMBOL (BUTTON STYLES) --- */
     
-    /* 1. KONDISI NORMAL (Hijau Brenden) */
+    /* 1. Target Button Biasa (st.button) */
     div.stButton > button {
-        background-color: #2f4f4f; 
-        color: white;              
-        border-radius: 25px;
-        padding: 10px 25px;
-        border: 2px solid #2f4f4f; 
+        background-color: #2f4f4f !important; 
+        color: white !important; 
+        border-radius: 15px;
+        padding: 10px 20px; 
+        border: none; 
         font-weight: bold;
-        transition: all 0.2s ease-in-out;
-    }
-    
-    /* 2. KONDISI HOVER (Saat mouse nempel - Hijau Terang) */
-    div.stButton > button:hover {
-        background-color: #556b2f; 
-        border-color: #556b2f;
-        transform: scale(1.05); 
-        color: white;
+        width: 100%;
+        transition: all 0.2s;
     }
 
-    /* 3. KONDISI DIPENCET/ACTIVE (Jadi Pink Rachel) */
-    div.stButton > button:active, 
-    div.stButton > button:focus, 
-    div.stButton > button:focus-visible {
-        background-color: #ffc0cb !important; /* Pink Pastel */
-        color: #2f4f4f !important;            /* Teks jadi Hijau Gelap */
-        border-color: #ffc0cb !important;     
-        transform: scale(0.95);               
-        box-shadow: 0 0 15px rgba(255, 192, 203, 0.8); /* Efek GLOW PINK */
-        outline: none;
+    /* 2. Target Link Button (st.link_button) - INI YANG BARU */
+    div.stLinkButton > a {
+        background-color: #2f4f4f !important; /* Samakan warna */
+        color: white !important; 
+        border-radius: 15px;
+        padding: 10px 20px; 
+        border: none; 
+        font-weight: bold;
+        width: 100%;
+        display: flex;             /* Biar teks di tengah */
+        justify-content: center;   /* Biar teks di tengah */
+        align-items: center;       /* Biar teks di tengah */
+        text-decoration: none;     /* Hilangkan garis bawah */
+        transition: all 0.2s;
+    }
+
+    /* 3. Efek Hover untuk KEDUANYA */
+    div.stButton > button:hover, div.stLinkButton > a:hover {
+        background-color: #556b2f !important; /* Warna saat disentuh */
+        color: white !important;
+        transform: scale(1.05);
+        border: none;
     }
     
-    /* Box Info & Success custom */
-    div[data-testid="stAlert"] {
-        border-radius: 15px;
-        opacity: 0.9;
+    /* 4. Efek Klik (Active) */
+    div.stButton > button:active, div.stLinkButton > a:active {
+        background-color: #ff69b4 !important;
+        transform: scale(0.95);
     }
+    
     </style>
     """, unsafe_allow_html=True)
 
@@ -128,11 +134,20 @@ else:
             if st.button("Open Dino's Profile", use_container_width=True):
                 st.switch_page("pages/2_dino.py")
     
-    col_100, col_empty= st.columns([2,1])
+    col_envelope, col_100= st.columns(2)
+    with col_envelope:
+        with st.container():
+            st.markdown("<h3 style='text-align: center;'>💌One-Year Commit</h3>", unsafe_allow_html=True)
+            st.error("Happy 1st Anniversary Sayang!")
+            st.link_button(
+                label="Open the Secret Message", 
+                url="https://bearsundino1st.my.canva.site/", 
+                use_container_width=True
+            )
     with col_100:
         with st.container():
-            st.markdown("<h3 style='text-align: center;'>💖 100 Reasons Why </h3>", unsafe_allow_html=True)
-            st.error("100 Reasons Why I love You")
+            st.markdown("<h3 style='text-align: center;'>💖100 Reasons Why </h3>", unsafe_allow_html=True)
+            st.warning("100 Reasons Why I love You")
             if st.button("Open the 100 Reasons Why", use_container_width=True):
                 st.switch_page("pages/3_100.py")
 
