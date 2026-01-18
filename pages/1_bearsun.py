@@ -71,7 +71,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("🌸 Rachel's World")
-st.write("Welcome to the softest place on the internet. Grab a cookie! 🍪")
+st.write("Welcome to the softest, calmest, adorably place on the internet. Grab a warm water and enjoy!")
 st.markdown("---")
 
 #FITUR INTERAKTIF MENGGUNAKAN TABS

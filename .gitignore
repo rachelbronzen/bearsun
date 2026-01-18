@@ -10,9 +10,5 @@ venv/
 
 #kONFIGURASI LOKAL
 .streamlit/secrets.toml
+secrets.toml
 .env
-
-# DATA PRIBADI (OPSIONAL)
-# Kalau kamu tidak mau catatan rahasia Rachel terbaca publik di GitHub,
-# masukkan nama file txt ini. TAPI, nanti pas deploy harus diakali.
-# Saran: Jangan di-ignore, tapi isinya dikosongkan dulu sebelum push.
