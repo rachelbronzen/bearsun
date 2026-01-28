@@ -151,6 +151,23 @@ else:
             if st.button("Open the 100 Reasons Why", use_container_width=True):
                 st.switch_page("pages/3_100.py")
 
+    col_perjanjian, col_sps = st.columns(2)
+    with col_perjanjian:
+        with st.container():
+            st.markdown("<h3 style='text-align: center;'>📜 Agreement</h3>", unsafe_allow_html=True)
+            st.success("LDR Relationship Agreement")
+            if st.button("Open the Agreement", use_container_width=True):
+                st.switch_page("pages/5_perjanjian.py")
+    with col_sps:
+        with st.container():
+            st.markdown("<h3 style='text-align: center;'>📊 Spreadsheet</h3>", unsafe_allow_html=True)
+            st.info("Our Spreadsheet Data")
+            st.link_button(
+                label="Open the Spreadsheet", 
+                url="https://docs.google.com/spreadsheets/d/1dOIdmiLQXz7pptv3EsNo8-t6OO3h6SMLfuHoDGbhEA8/edit?usp=sharing", 
+                use_container_width=True
+            )
+        
     #logout
     st.markdown("<br><br>", unsafe_allow_html=True)
     st.markdown("---")
