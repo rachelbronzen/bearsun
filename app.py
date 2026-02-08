@@ -167,7 +167,18 @@ else:
                 url="https://docs.google.com/spreadsheets/d/1dOIdmiLQXz7pptv3EsNo8-t6OO3h6SMLfuHoDGbhEA8/edit?usp=sharing", 
                 use_container_width=True
             )
-        
+    
+    col_spotifylink, emptycol = st.columns([2,1])
+    with col_spotifylink:
+        with st.container():
+            st.markdown("<h3 style='text-align: center;'>🎵 Our Song </h3>", unsafe_allow_html=True)
+            st.success("Songs That Describes How Rachel Feels in This Relationship")
+            st.link_button(
+                label="Open the Playlist", 
+                url="https://open.spotify.com/playlist/3h7igZlC6ZOaNl5fGP9aFs?si=e7cf0f0db96b4adb", 
+                use_container_width=True
+            )
+
     #logout
     st.markdown("<br><br>", unsafe_allow_html=True)
     st.markdown("---")
