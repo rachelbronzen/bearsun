@@ -160,17 +160,15 @@ st.markdown("<br>", unsafe_allow_html=True)
 col_a, col_b = st.columns(2)
 
 with col_a:
-    # Tanda Tangan Rachel (Font Great Vibes)
     st.markdown("""
-        <div class="signature-text">Rachel</div>
-        <div class="signature-line">SIGNED BY RACHEL<br><span style='font-weight:normal; font-size:10px;'>Party A</span></div>
+        <div class="signature-text">Rach</div>
+        <div class="signature-line">SIGNED BY RACH<br><span style='font-weight:normal; font-size:10px;'>Party A</span></div>
     """, unsafe_allow_html=True)
 
 with col_b:
-    # Tanda Tangan Brenden (Font Great Vibes)
     st.markdown("""
-        <div class="signature-text">Brenden</div>
-        <div class="signature-line">SIGNED BY BRENDEN<br><span style='font-weight:normal; font-size:10px;'>Party B</span></div>
+        <div class="signature-text">Bren</div>
+        <div class="signature-line">SIGNED BY BREN<br><span style='font-weight:normal; font-size:10px;'>Party B</span></div>
     """, unsafe_allow_html=True)
 
 # 2. Cap Stempel

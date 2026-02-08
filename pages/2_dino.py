@@ -99,7 +99,7 @@ def delete_items(items_to_delete):
 
 # --- HEADER ---
 st.title("🎱 Dino's Command Center")
-st.write("System Online. Welcome back, Agent Brenden.")
+st.write("System Online. Welcome back, Agent Bren.")
 st.markdown("---")
 
 # --- FITUR INTERAKTIF (TABS) ---
@@ -115,7 +115,7 @@ with tab1:
     with c2:
         st.subheader("Player Profile")
         with st.container():
-            st.write("**Codename:** Brenden💚")
+            st.write("**Codename:** Bren💚")
             st.write("**Love Language:** Physical Touch")
             st.write("**Comfort Food:** Mie")
             
@@ -186,7 +186,7 @@ with tab3:
             time.sleep(1)
             st.markdown("""
             ### 💌 Incoming Transmission:
-            *Hai Brenden sayang!* Thank you for being the best person I met in my life.  
+            *Hai sayang!* Thank you for being the best person I met in my life.  
             Semangat di Taiwan sayaaang. Jangan lupa jaga kesehatan dan makannya yg teratur hayooo.
             *Love, Bearsun.* 🐻
             """)

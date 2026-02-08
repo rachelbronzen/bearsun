@@ -120,16 +120,16 @@ else:
     st.markdown("---")
     
     #navigasi ke page lain
-    col_rachel, col_brenden= st.columns(2)
-    with col_rachel:
+    col_rach, col_bren= st.columns(2)
+    with col_rach:
         with st.container():
-            st.markdown("<h3 style='text-align: center;'>🌸 Rachel</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center;'>🌸 Rach</h3>", unsafe_allow_html=True)
             st.info("bread, spaghetti, zoo")
             if st.button("Open Bearsun's Profile", use_container_width=True):
                 st.switch_page("pages/1_bearsun.py")
-    with col_brenden:
+    with col_bren:
         with st.container():
-            st.markdown("<h3 style='text-align: center;'>🎱 Brenden</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='text-align: center;'>🎱 Bren</h3>", unsafe_allow_html=True)
             st.success("billiard, board game, travel")
             if st.button("Open Dino's Profile", use_container_width=True):
                 st.switch_page("pages/2_dino.py")

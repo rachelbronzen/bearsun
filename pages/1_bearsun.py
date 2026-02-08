@@ -31,7 +31,7 @@ st.markdown("""
     
     /* --- LOGIKA TOMBOL (BUTTON STYLES) --- */
     
-    /* 1. KONDISI NORMAL (Hijau Brenden) */
+    /* 1. KONDISI NORMAL */
     div.stButton > button {
         background-color: #2f4f4f; 
         color: white;              
@@ -50,7 +50,7 @@ st.markdown("""
         color: white;
     }
 
-    /* 3. KONDISI DIPENCET/ACTIVE (Jadi Pink Rachel) */
+    /* 3. KONDISI DIPENCET/ACTIVE  */
     div.stButton > button:active, 
     div.stButton > button:focus, 
     div.stButton > button:focus-visible {
@@ -70,7 +70,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🌸 Rachel's World")
+st.title("🌸 Rach's World")
 st.write("Welcome to the softest, calmest, adorably place on the internet. Grab a warm water and enjoy!")
 st.markdown("---")
 
@@ -95,7 +95,7 @@ with tab1:
         
         # Kita pakai container biar rapi
         with st.container():
-            st.write("**Codename:** Rachel 🎀")
+            st.write("**Codename:** Rach 🎀")
             st.write("**Love Language:** Acts of Service & Quality Time")
             st.write("**Comfort Food:** Roti, Pizza, Spaghetti")
             
@@ -156,12 +156,12 @@ with tab2:
         
         # Logika Hasil Masakan Lucu-lucuan
         if base == "Love & Hugs" and topping == "Rainbow Sprinkles":
-            st.success("✨ You baked a **Perfect Pink Cupcake!** (Rachel's Favorite)")
+            st.success("✨ You baked a **Perfect Pink Cupcake!** (Rach's Favorite)")
             st.image("https://placebear.com/300/200") # Gambar random bear
         elif "Python Code" in base or "Bugs" in topping:
             st.error("💥 Oh no! You baked a **Syntax Error Pie!** It tastes like stress.")
         elif topping == "Spicy Jalapeno":
-            st.warning("🔥 Whoa! **Spicy Lava Cake.** Brenden might like this one.")
+            st.warning("🔥 Whoa! **Spicy Lava Cake.** Bren might like this one.")
         else:
             st.info(f"🍪 You baked a unique **{base} Cookie** with **{topping}**!")
 
