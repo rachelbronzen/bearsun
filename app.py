@@ -173,11 +173,8 @@ else:
         with st.container():
             st.markdown("<h3 style='text-align: center;'>🎵 Our Song </h3>", unsafe_allow_html=True)
             st.warning("Songs That Describes How Rachel Feels in This Relationship")
-            st.link_button(
-                label="Open the Playlist", 
-                url="https://open.spotify.com/playlist/3h7igZlC6ZOaNl5fGP9aFs?si=e7cf0f0db96b4adb", 
-                use_container_width=True
-            )
+            if st.button("Open the Playlist", use_container_width=True):
+                st.switch_page("pages/7_song.py")
 
     #logout
     st.markdown("<br><br>", unsafe_allow_html=True)
