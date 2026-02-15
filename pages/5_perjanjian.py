@@ -150,6 +150,8 @@ st.write("")
 buat_pasal("V", "ABSENCE PROTOCOL", "Kalau ga bisa ngechat, ngomong kenapa. Jangan langsung ditinggal.")
 st.write("")
 buat_pasal("VI", "MANDATORY MEETING", "Setiap Jumat malem Video Call (minimal seminggu 1x)")
+st.write("")
+buat_pasal("VII", "SPECIAL OCCASION", "Kamu pulang Indo = Kita makan bareng (YES! LET'S GO. MAKAN APA KITA?)")
 
 st.write("---")
 
